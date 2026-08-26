@@ -1,9 +1,6 @@
 <?php
 namespace Controller;
 
-use Model\ModelArticle;
-use View\ViewArticle;
-
 class ControllerArticle extends Controller{
     //ATTRIBUTS
 

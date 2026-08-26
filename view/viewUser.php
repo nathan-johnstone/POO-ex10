@@ -3,8 +3,6 @@ namespace View;
 
 class ViewUser extends View{
     //ATTRIBUT
-    private ViewFooter $viewFooter;
-    private ViewHeader $viewHeader;
 
     //CONSTRUCTEUR
 
