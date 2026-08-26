@@ -16,7 +16,7 @@ class ViewUser extends View{
                 <h1>Liste des utilisateurs</h1>
                 <ul>
 <?php  
-                foreach($this->getData() as $row){
+                foreach($this->data as $row){
 ?>
                     <li>Pseudo : <?= $row['pseudo'] ?> - Email : <?= $row['email'] ?> - Role : <?= $row['role'] ?></li>
 <?php    

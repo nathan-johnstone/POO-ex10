@@ -16,7 +16,7 @@ class ViewArticle extends View{
                 <h1>Liste des Articles</h1>
                 <ul>
 <?php
-                    foreach($this->getData() as $row){
+                    foreach($this->data as $row){
 ?>
                         <article>
                             <h2> <?= $row['title'] ?></h2>

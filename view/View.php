@@ -24,6 +24,15 @@ Class View{
         return $this->data;
     }
 
+    public function __get(string $name):mixed{
+        switch ($name){
+            case 'data':
+                return $this->data;
+            default:
+                return null;
+        }
+    }
+
     public function setBuffer(string $buffer):self{
         $this->buffer = $buffer;
         return $this;
