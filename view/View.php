@@ -20,17 +20,25 @@ Class View{
         return $this;
     }
 
+
     public function getData(){
         return $this->data;
     }
 
-    public function __get(string $name):mixed{
-        switch ($name){
-            case 'data':
-                return $this->data;
-            default:
-                return null;
+    // public function __get(string $name):?array{
+    //     switch ($name){
+    //         case 'data':
+    //             return $this->data;
+    //         default:
+    //             return null;
+    //     }
+    // }
+
+    public function __get(string $name):array{
+        if($name == 'data'){
+            return $this->data;
         }
+            return [];
     }
 
     public function setBuffer(string $buffer):self{
