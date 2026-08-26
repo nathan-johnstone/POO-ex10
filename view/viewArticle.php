@@ -2,7 +2,7 @@
 namespace View;
 
 class ViewArticle extends View{
-    //ATTRIBUT
+    //ATTRIBUTS
 
     //CONSTRUCTEUR
 

@@ -2,7 +2,7 @@
 namespace View;
 
 class ViewUser extends View{
-    //ATTRIBUT
+    //ATTRIBUTS
 
     //CONSTRUCTEUR
 

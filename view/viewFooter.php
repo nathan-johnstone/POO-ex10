@@ -2,7 +2,7 @@
 namespace View;
 
 class ViewFooter{
-    //ATTRIBUT
+    //ATTRIBUTS
     private ?string $buffer;
 
     //METHODS

@@ -6,7 +6,7 @@ use PDO;
 use EXCEPTION;
 
 class ModelArticle extends Model{
-    //ATTRIBUT
+    //ATTRIBUTS
     private ?int $id;
     private ?string $title;
     private ?string $content;
