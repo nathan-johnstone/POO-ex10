@@ -5,8 +5,8 @@ Class View{
     //ATTRIBUTS
     private ViewFooter $viewFooter;
     private ViewHeader $viewHeader;
-    protected ?array $data;
-    protected ?string $buffer;
+    private ?array $data;
+    private ?string $buffer;
 
     //CONSTRUCTEUR
     public function __construct(string $titre = "Titre de la page", string $script = ""){
@@ -17,6 +17,15 @@ Class View{
     //GETTER ET SETTER
     public function setData(array $data):self{
         $this->data = $data;
+        return $this;
+    }
+
+    public function getData(){
+        return $this->data;
+    }
+
+    public function setBuffer(string $buffer):self{
+        $this->buffer = $buffer;
         return $this;
     }
 

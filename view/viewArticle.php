@@ -16,7 +16,7 @@ class ViewArticle extends View{
                 <h1>Liste des Articles</h1>
                 <ul>
 <?php
-                    foreach($this->data as $row){
+                    foreach($this->getData() as $row){
 ?>
                         <article>
                             <h2> <?= $row['title'] ?></h2>
@@ -28,7 +28,7 @@ class ViewArticle extends View{
                 </ul>
             </main>
 <?php
-        $this->buffer = ob_get_clean();
+        $this->setBuffer(ob_get_clean());
         return $this;
     }
 }

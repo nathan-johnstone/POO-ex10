@@ -16,7 +16,7 @@ class ViewUser extends View{
                 <h1>Liste des utilisateurs</h1>
                 <ul>
 <?php  
-                foreach($this->data as $row){
+                foreach($this->getData() as $row){
 ?>
                     <li>Pseudo : <?= $row['pseudo'] ?> - Email : <?= $row['email'] ?> - Role : <?= $row['role'] ?></li>
 <?php    
@@ -25,7 +25,7 @@ class ViewUser extends View{
                 </ul>
             </main>
 <?php
-        $this->buffer = ob_get_clean();
+        $this->setBuffer(ob_get_clean());
         return $this;
     }
 }
